@@ -1,0 +1,13 @@
+:root {
+    --primary-color-1--: #f38e82;
+    --gradient-color-1--: #fbdb89;
+    --gradient-color-2--: #f48982;
+    --gradient: linear-gradient(to right bottom, var(--gradient-color-1--), var(--gradient-color-2--));
+    --light-grey-0--: #f9f5f3; /* light background */
+    --light-grey-1--: #f2efee; /* Light lines */
+    --light-grey-2--: #d3c7c3; /* Light text (placeholder) */
+    --light-grey-3--: #615551; /* Normal text */
+    --light-grey-4--: #918581; /* Lighter text */
+    --spinner-color: #f38e82;
+    font-size: 62.5%;
+}

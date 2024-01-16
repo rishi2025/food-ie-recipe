@@ -1,0 +1,18 @@
+{
+  "name": "foodie",
+  "version": "1.0.0",
+  "description": "Recipe Guide",
+  "default": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "Rishi",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.10.3"
+  },
+  "dependencies": {
+    "fractional": "^1.0.0"
+  }
+}
