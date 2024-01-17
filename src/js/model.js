@@ -1,7 +1,7 @@
 import { API_URL, RESULTS_PER_PAGE, KEY } from './config.js';
 import { AJAX } from './helper.js';
 
-createRecipeObject = function (data) {
+const createRecipeObject = function (data) {
     const { recipe } = data.data;
     return state.recipe = {
         id: recipe.id,
