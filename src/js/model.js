@@ -1,19 +1,7 @@
 import { API_URL, RESULTS_PER_PAGE, KEY } from './config.js';
 import { AJAX } from './helper.js';
 
-export const state = {
-    recipe: {},
-    search: {
-        query: '',
-        results: [],
-        resultsPerPage: RESULTS_PER_PAGE,
-        page: 1,
-    },
-    bookmarks: [],
-};
-
-createRecipeObject = function (data) 
-{
+createRecipeObject = function (data) {
     const { recipe } = data.data;
     return state.recipe = {
         id: recipe.id,
@@ -24,9 +12,20 @@ createRecipeObject = function (data)
         servings: recipe.servings,
         cookingTime: recipe.cooking_time,
         ingredients: recipe.ingredients,
-        ...(recipe.key && {key: recipe.key})
+        ...(recipe.key && { key: recipe.key })
     };
-}
+};
+
+export const state = {
+    recipe: {},
+    search: {
+        query: '',
+        results: [],
+        resultsPerPage: RESULTS_PER_PAGE,
+        page: 1,
+    },
+    bookmarks: [],
+};
 
 export const loadRecipe = async function (id) {
     try {
